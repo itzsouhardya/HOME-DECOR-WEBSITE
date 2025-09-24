@@ -1,0 +1,119 @@
+/* Google Font  */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,500;1,600&family=Montserrat:wght@600;700&display=swap");
+
+/* Custom CSS  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+::selection {
+  background-color: #c50529;
+}
+header {
+  width: 100%;
+  min-height: 120vh;
+  
+ background-position: center;
+  background-size: cover;
+}
+.navbar{
+	display:flex;
+	align-items:center;
+	padding:20px;
+}
+nav{
+	flex:1;
+	text-align:right;
+}
+nav ul{
+	display:inline-block;
+	list-style-type:none;
+}
+nav ul li a{
+	display:inline-block;
+	margin-right:20px;
+  color: #ff0000;
+}	
+p{
+	color:#ff0000;
+}
+.container{
+	max-width:1300px;
+	margin:auto;
+	padding-left:25px;
+	padding-right:25px;
+}
+nav {
+  display: flex;
+  padding: 2.5% 5%;
+}
+nav ul {
+  text-align: right;
+  flex: 1;
+}
+nav ul li {
+  display: inline-block;
+  padding: 6px 15px;
+}
+nav ul li a {
+  color: orange;
+  font-size: 16px;
+}
+nav ul li a:hover {
+  color: #c50529;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  transition: 0.6s;
+  background-color: #c50529;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.categories{
+	margin:70px 0px;
+  width: 200px;
+  height: 200px;
+}
+.col-3{
+	flex-basis:30%;
+	min-width:250px;
+	text-align:center;
+	flex-basis:30%;
+}
+/*.col-3 img {
+    width: 100px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+*/
+.col-3 img {
+    max-width: 100px;
+    height: 100px;
+    /*height: auto;*/
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.col-3::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.small-container{
+	max-width:1080px;
+	margin:auto;
+	padding-left:25px;
+	padding-right:25px;
+}
